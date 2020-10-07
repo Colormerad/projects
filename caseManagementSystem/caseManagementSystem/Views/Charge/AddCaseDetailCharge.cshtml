@@ -1,0 +1,38 @@
+﻿@model caseManagementSystem.Models.Data.CaseCharge
+@{
+    ViewBag.Title = "addCaseDetailCharge";
+}
+<div>
+    <h4>Add Charge to case detail</h4>
+</div>
+<div>
+    @using (Html.BeginForm("AddCaseDetailCharge", "Charge", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.HiddenFor(m => m.CaseDetailId)
+        @Html.ValidationSummary()
+        <fieldset>
+            <div class="form-group">
+                <p>Charge Amount</p>
+                @Html.TextBoxFor(m => m.ChargeAmount, new { @class = "helper-format", style = "font-size: .9em, width: 20em ", @onfocus = "this.select();", @autofocus = "autofocus" })
+            </div>
+            <div class="form-group">
+                <p>Charge Date</p>
+                @Html.TextBoxFor(m => m.ChargeDate, "{0:MM/dd/20yy}", new { @class = "date-picker" })
+            </div>
+            <div class="form-group">
+                <p>Due Date</p>
+                @Html.TextBoxFor(m => m.DueDate, "{0:MM/dd/20yy}", new { @class = "date-picker" })
+            </div>
+
+            <div class=" btn-group">
+                <div class="SaveButton">
+                    <input id="SaveButton" name="SaveButton" type="submit" value="Save" class="btn btn-primary">
+                </div>
+                <div>
+                    <input type="button" class="btn btn-primary" value="Cancel" onclick="@("window.location.href='" + @Url.Action("ViewChargeDetails", "Charge", new {CaseDetailId = Model.CaseDetailId}) + "'");" />
+                </div>
+            </div>
+        </fieldset>
+    }
+</div>
+

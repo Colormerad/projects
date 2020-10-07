@@ -1,0 +1,48 @@
+﻿@model IEnumerable<caseManagementSystem.Models.Data.CaseMaster>
+
+@{
+    ViewBag.Title = "Case Management System";
+}
+<div>
+    <h4>View All Cases</h4>
+</div>
+
+<div>
+    <table class="table table-bordered table-striped table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>Case Number</th>
+            <th>Case Name</th>
+            <th>Filing Date</th>
+            <th>Agency</th>
+            <th>Judge</th>
+            <th colspan="3"></th>
+        </tr>    
+
+    </thead>
+    <tbody>
+        @foreach (var id in Model.OrderBy(x => x.CaseNumber))
+        {
+        <tr>
+            <td> @id.CaseNumber </td>
+            <td> @id.CaseName </td>
+            <td> @id.FilingDate.ToShortDateString() </td>
+            <td> @id.Agency </td>
+            <td> @id.Judge </td>
+            <td> <a href="@Url.Action("ViewCaseDetails", "Detail", new { CaseId = id.Id })">View Details</a> </td>
+            <td> <a href="@Url.Action("EditCase", "Case", new { CaseId = id.Id } )">Edit Case</a></td>
+            <td> <a href="@Url.Action("DeleteCase", "Case", new { CaseId = id.Id } )">Delete Case</a></td>
+        </tr>
+        }
+    </tbody>
+    
+    </table>
+    
+</div>
+    
+    
+        
+        
+   
+
+

@@ -1,0 +1,95 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+    background-color: #DCDCDD;
+}
+
+navbar {
+    overflow: hidden;
+    background: #4C5C68;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #1985A1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+.main {
+    margin-top: 30px;
+}
+    
+ .body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+   
+}
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.subhead{
+    padding-right: 10px;
+    padding-bottom: 6px;
+}
+.head {
+    padding-bottom: 10px;
+}
+.table {
+    margin-top: 20px;
+    border: 4px solid #4C5C68;
+}
+
+th {
+    background-color: #4C5C68;
+}
+
+tr:nth-child(odd) {
+    background-color: #C5C3C6;
+}
+
+tr:nth-child(even) {
+    background-color: #95999D;
+}
+
+a {
+    color: #1985A1;
+}
+
+a:hover {
+        color: #4C5C68;
+}
+
+
+.btn {
+    background-color: #1985A1;
+    border: #1985A1;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 5px;
+}
+
+.btn:hover {
+     background-color: #4C5C68;
+}
+.text-area {
+    width: 300px;
+    height: 150px;
+}

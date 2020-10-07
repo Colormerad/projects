@@ -1,0 +1,56 @@
+﻿@model caseManagementSystem.Models.Data.CaseDetail
+@{
+    ViewBag.Title = "ViewChargeDetails";
+}
+
+<div>
+    <h4>View case charges</h4>
+</div>
+<div>
+    <p> <span class="subhead"><strong>Name: </strong>@Model.LastName , @Model.FirstName </span> </p>
+
+</div>
+
+<div>
+    <p>
+        <span class="subhead"><strong>Address: </strong>@Model.StreetA,  @Model.StreetB    </span><span class="subhead"><strong>City: </strong>@Model.City  </span><span class="subhead"><strong>State: </strong>@Model.State  </span><span class="subhead"><strong>Postal Code: </strong>@Model.PostalCode  </span>
+    </p>
+
+</div>
+<div>
+    <p> <span class="subhead"><strong>Notes: </strong>@Model.Notes </span> </p>
+
+</div>
+
+<div>
+    <a href="@Url.Action("AddCaseDetailCharge", "Charge", new { CaseDetailId = Model.Id })">Add Charge</a>
+</div>
+
+<div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Charge amount</th>
+                <th>Charge Date</th>
+                <th>Due Date</th>
+                <th colspan="2"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var charge in Model.CaseCharges.OrderBy(x => x.ChargeDate))
+            {
+                <tr>
+                    <td>$ @charge.ChargeAmount </td>
+                    <td> @charge.ChargeDate.ToShortDateString() </td>
+                    <td> @charge.DueDate.ToShortDateString() </td>
+                    <td> <a href="@Url.Action("EditCaseDetailCharge", "Charge", new { CaseChargeId = charge.Id })">Edit Charge</a></td>
+                    <td> <a href="@Url.Action("DeleteCaseCharges", "Charge", new { CaseChargeId = charge.Id })">Delete Charge</a> </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div>
+        <a href="@Url.Action("ViewCaseDetails", "Detail", new { CaseId = Model.CaseMasterId })">Back to Details</a>
+    </div>
+</div>

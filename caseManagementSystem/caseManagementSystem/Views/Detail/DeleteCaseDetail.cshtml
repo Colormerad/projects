@@ -1,0 +1,27 @@
+﻿@model caseManagementSystem.Models.Data.CaseDetail
+@{
+    ViewBag.Title = "deleteCaseDetail";
+}
+<div>
+    <h4>Delete case details</h4>
+</div>
+
+<div>
+    <p>Case Number: @Model.CaseMaster.CaseNumber</p>
+</div>
+
+<div class="form-group">
+    <p>Are you sure you want to delete these case details?</p>
+
+    <div class="btn-group">
+        @using (Html.BeginForm("DeleteCaseDetail", "Detail", "Delete"))
+        {
+            @Html.HiddenFor(x => x.Id)
+            @Html.HiddenFor(x => x.CaseMasterId)
+            <div class="SaveButton">
+                <input id="DeleteButton" name="DeleteButton" type="submit" value="Delete" class="btn btn-primary">
+            </div>
+        }
+        <input type="button" class=" btn btn-primary" value="Cancel" onclick="@("window.location.href='" + @Url.Action("ViewCaseDetails", "Detail", new {CaseId = Model.CaseMasterId}) + "'");" />
+    </div>
+</div>

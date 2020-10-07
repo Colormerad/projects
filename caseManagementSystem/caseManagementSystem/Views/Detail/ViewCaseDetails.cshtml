@@ -1,0 +1,62 @@
+﻿@model caseManagementSystem.Models.Data.CaseMaster
+@{
+    ViewBag.Title = "viewCaseDetails";
+}
+<div>
+    <h4 class="head">View case details</h4>
+</div>
+<div>
+    <p> <span class="subhead"><strong>Case Name: </strong>@Model.CaseName  </span><span class="subhead"><strong>Case #: </strong>@Model.CaseNumber </span> </p>
+   
+</div>
+
+<div>
+    <p>
+        <span class="subhead"><strong>Filing Date: </strong>@Model.FilingDate.ToShortDateString()  </span><span class="subhead"><strong>Agency: </strong>@Model.Agency  </span><span class="subhead"><strong>Judge: </strong>@Model.Judge  </span>
+    </p>
+    
+</div>
+<div>
+    <a href="@Url.Action("AddCaseDetail", "Detail", new { CaseId = Model.Id })">Add Case Details</a>
+</div>
+
+<div>
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Occurance Date</th>
+                <th>Name</th>
+                <th>Street 1</th>
+                <th>Street 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Postal Code</th>
+                <th>Notes</th>
+                <th colspan="3"></th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var caseDetail in Model.CaseDetails.OrderByDescending(x => x.DetailDate))
+            {
+                <tr>
+                    <td>@caseDetail.DetailDate.ToShortDateString() </td>
+                    <td> @caseDetail.FirstName  @caseDetail.LastName </td>
+                    <td> @caseDetail.StreetA </td>
+                    <td> @caseDetail.StreetB </td>
+                    <td> @caseDetail.City </td>
+                    <td> @caseDetail.State</td>
+                    <td> @caseDetail.PostalCode </td>
+                    <td> @caseDetail.Notes</td>
+                    <td> <a href="@Url.Action("ViewChargeDetails", "Charge", new { CaseDetailId = caseDetail.Id })">View Charges</a></td>
+                    <td> <a href="@Url.Action("EditCaseDetail", "Detail", new { CaseDetailId = caseDetail.Id })">Edit Details</a></td>
+                    <td> <a href="@Url.Action("DeleteCaseDetail", "Detail", new { CaseDetailId = caseDetail.Id })">Delete Details</a> </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+    <div>
+        <a href="@Url.Action("Index", "Case")">Back to Cases</a>
+    </div>
+</div>
