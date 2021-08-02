@@ -1,0 +1,50 @@
+﻿@model PaymentSystem.Models.CustomerViewModel
+@{
+    ViewBag.Title = "AddCustomer";
+}
+
+<h2>AddCustomer</h2>
+@using (Html.BeginForm("AddCustomer", "Customer", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    <fieldset>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>Name:</p>
+            @Html.TextBoxFor(m => m.customer.CustomerName , new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <p>Email:</p>
+            @Html.TextBoxFor(m => m.customer.CustomerEmail, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <p>Street 1:</p>
+            @Html.TextBoxFor(m => m.address.Street1, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <p>City:</p>
+            @Html.TextBoxFor(m => m.address.City, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <p>Zipcode:</p>
+            @Html.TextBoxFor(m => m.address.Zipcode, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <p>Phone:</p>
+            @Html.TextBoxFor(m => m.phone.PhoneNumber, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <br>
+            <br>
+            <br>
+            <br>
+            <p>Street 2:</p>
+            @Html.TextBoxFor(m => m.address.Street2, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <p>State:</p>
+            @Html.TextBoxFor(m => m.address.State, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <br>
+            <p>Phone Description:</p>
+            @Html.TextBoxFor(m => m.phone.PhoneDescription, new { @class = "helper-format", style = "font-size: .9em, width: 20em " })
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <br>
+            <div class="SaveButton">
+                <input id="SaveButton" name="SaveButton" type="submit" value="Save" class="btn btn-primary">
+            </div>
+        </div>
+    </fieldset>
+}

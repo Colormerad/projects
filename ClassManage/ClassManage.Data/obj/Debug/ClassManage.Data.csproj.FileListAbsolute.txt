@@ -1,0 +1,9 @@
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\obj\Debug\ClassManage.Data.csprojAssemblyReference.cache
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\obj\Debug\ClassManage.Data.csproj.CoreCompileInputs.cache
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\bin\Debug\ClassManage.Data.dll
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\bin\Debug\ClassManage.Data.pdb
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\bin\Debug\ClassManage.Models.dll
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\bin\Debug\ClassManage.Models.pdb
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\obj\Debug\ClassManage.Data.csproj.CopyComplete
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\obj\Debug\ClassManage.Data.dll
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Data\obj\Debug\ClassManage.Data.pdb

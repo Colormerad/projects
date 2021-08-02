@@ -1,0 +1,44 @@
+﻿<Properties StartupConfiguration="{E3655D59-2B41-404D-978E-22765BD58498}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PaymentSystem/Views/Payment/EditPayment.cshtml">
+    <Files>
+      <File FileName="PaymentSystem.Data/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Customer/AddCustomer.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Invoice/AddInvoice.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Invoice/EditInvoice.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Payment/AddPayment.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Customer/EditCustomer.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Customer/Customers.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Customer/CustomerInvoice.cshtml" Line="1" Column="1" />
+      <File FileName="PaymentSystem/Views/Payment/EditPayment.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PaymentSystem" expanded="True">
+            <Node name="PaymentSystem" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Customer" expanded="True" />
+                <Node name="Home" expanded="True" />
+                <Node name="Invoice" expanded="True" />
+                <Node name="Manage" expanded="True" />
+                <Node name="Payment" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="PaymentSystem.Data" expanded="True">
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="PaymentSystem.Tests" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PaymentSystem PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

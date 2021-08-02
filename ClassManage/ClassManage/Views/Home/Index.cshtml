@@ -1,0 +1,53 @@
+﻿@model ClassManage.Models.ClassViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="col-sm-6">
+    <h6>Classroom Manager</h6>
+    <div class=" elementContainer col-sm-6">
+        @using (Html.BeginForm("Index", "Home"))
+        {
+            <fieldset>
+                <div class="row">
+                    <div class="form-group">
+                        <p class="">Class Name:</p>
+                    </div>
+                    <div class="form-group">
+                        @Html.DropDownListFor(m => m.Id, Model.ClassList, new { @Id = "ClassList" })
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <p>Teacher:</p>
+                    </div>
+                    <div class="form-group TeacherField" id="TeacherField">
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.StudentName)
+                        <input id="SaveButton" name="SaveButton" type="submit" value="Add Student" class="btn btn-primary">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div>
+                        <table class="" id="StudentList">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                        <input id="SaveButton" name="SaveButton" type="submit" value="SortAsc" class="btn btn-primary">
+                        <input id="SaveButton" name="SaveButton" type="submit" value="SortDesc" class="btn btn-primary">
+                 </div>
+            </fieldset>
+        }
+    </div>
+</div>

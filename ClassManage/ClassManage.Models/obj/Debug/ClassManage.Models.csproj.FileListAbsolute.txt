@@ -1,0 +1,6 @@
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\bin\Debug\ClassManage.Models.dll
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\bin\Debug\ClassManage.Models.pdb
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\obj\Debug\ClassManage.Models.csprojAssemblyReference.cache
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\obj\Debug\ClassManage.Models.csproj.CoreCompileInputs.cache
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\obj\Debug\ClassManage.Models.dll
+C:\Users\mandimay\source\repos\ClassManage\ClassManage.Models\obj\Debug\ClassManage.Models.pdb

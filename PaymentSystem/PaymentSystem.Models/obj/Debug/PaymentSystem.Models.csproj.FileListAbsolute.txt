@@ -1,0 +1,12 @@
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/bin/Debug/PaymentSystem.Models.dll
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/bin/Debug/PaymentSystem.Models.pdb
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.csprojAssemblyReference.cache
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.csproj.CoreCompileInputs.cache
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.dll
+C:/Users/mandimay/source/repos/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.pdb
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/bin/Debug/PaymentSystem.Models.dll
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/bin/Debug/PaymentSystem.Models.pdb
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.csprojAssemblyReference.cache
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.csproj.CoreCompileInputs.cache
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.dll
+/Users/mandimay/Desktop/PaymentSystem/PaymentSystem.Models/obj/Debug/PaymentSystem.Models.pdb
